@@ -1,0 +1,60 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    animation: none;
+  }
+}
+:root {
+  --trafficBackground: #f0f0f0;
+}
+
+svg {
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+.trafficLight {
+  border: solid 1px black;
+  padding: 25px;
+  border-radius: 30px;
+  background-color: var(--trafficBackground);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 100px;
+  margin: 0 auto;
+
+  div {
+    border: solid 1px black;
+    border-radius: 50%;
+    height: 100px;
+    aspect-ratio: 1;
+    margin-block-start: 15px;
+    opacity: 0.2;
+    transition: opacity 0.5s;
+    &.red {
+      background-color: red;
+    }
+    &.yellow {
+      background-color: yellow;
+    }
+    &.green {
+      background-color: green;
+    }
+    &[data-active="active"] {
+      opacity: 1;
+    }
+  }
+}
