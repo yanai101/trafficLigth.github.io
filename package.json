@@ -1,5 +1,5 @@
 {
-  "homepage": "https://yanai101.github.io/trafficLigth.github.io",
+  "homepage": "https://yanai101.github.io/trafficLigth.github.io/",
   "name": "statemechineapp",
   "private": true,
   "version": "0.0.0",
@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "test": "vitest",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^6.4.6",
