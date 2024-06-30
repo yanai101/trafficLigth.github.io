@@ -83,6 +83,7 @@ function App() {
       </main>
       <br />
       <div>{response}</div>
+      <br />
       <button onClick={doTransition}>Switch</button>
     </>
   );
