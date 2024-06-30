@@ -40,5 +40,3 @@ describe("traffic Light State-Machine App", () => {
     expect(activeLight).toHaveClass("green");
   });
 });
-
-// Add more tests here based on your requirements
