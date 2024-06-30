@@ -4,7 +4,6 @@ import react from "@vitejs/plugin-react";
 
 export default defineProject({
   plugins: [react()],
-  base: "/trafficLigth.github.io/",
   test: {
     environment: "jsdom",
     // "reporters" is not supported in a project config,
